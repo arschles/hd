@@ -3,9 +3,9 @@ package actions
 import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo/middleware"
-	"github.com/gobuffalo/buffalo/middleware/ssl"
+	// "github.com/gobuffalo/buffalo/middleware/ssl"
 	"github.com/gobuffalo/envy"
-	"github.com/unrolled/secure"
+	// "github.com/unrolled/secure"
 
 	"github.com/arschles/hd/models"
 	"github.com/gobuffalo/buffalo/middleware/csrf"
