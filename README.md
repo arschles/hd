@@ -18,6 +18,20 @@ make dev
 buffalo dev
 ```
 
+To deploy to [ACI](https://azure.microsoft.com/en-us/services/container-instances/):
+
+```console
+az container create \
+	-n hd \
+	-g ${RESOURCE_GROUP} \
+	--image arschles/hd \
+	--ip-address public \
+	--ports 3000 \
+	-e "GO_ENV=production" "DATABASE_URL=${DATABASE_URL}"
+```
+
+Note: you can substitute `arschles/hd` with your own image name.
+
 The stuff below is Buffalo's boilerplate readme.
 
 ## Database Setup
