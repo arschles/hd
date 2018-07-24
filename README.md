@@ -2,6 +2,18 @@
 
 Thank you for choosing Buffalo for your web development needs.
 
+You'll need Docker and Docker Compose installed. After you have that, getting started
+is easy:
+
+```console
+make dev
+buffalo db create
+buffalo db migrate up
+buffalo dev
+```
+
+The stuff below is Buffalo's boilerplate readme.
+
 ## Database Setup
 
 It looks like you chose to set up your application using a postgres database! Fantastic!
