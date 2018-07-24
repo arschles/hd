@@ -1,0 +1,10 @@
+<div class="page-header">
+  <h1>Todo#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= todosPath() %>" class="btn btn-info">Back to all Todos</a></li>
+  <li><a href="<%= editTodoPath({ todo_id: todo.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= todoPath({ todo_id: todo.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+

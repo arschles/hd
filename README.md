@@ -15,8 +15,6 @@ Then, start up the app:
 
 ```console
 make dev
-buffalo db create
-buffalo db migrate up
 buffalo dev
 ```
 

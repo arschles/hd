@@ -71,6 +71,7 @@ func App() *buffalo.App {
 		apiV2Group := apiGroup.Group("/v2")
 		apiV2Group.GET("/things", apiV2ThingsHandler)
 
+		app.Resource("/todos", TodosResource{})
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 

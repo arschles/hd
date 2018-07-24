@@ -19,4 +19,13 @@ func init() {
 		log.Fatal(err)
 	}
 	pop.Debug = env == "development"
+
+	pop.CreateDB(DB)
+	migrator, err := pop.NewFileMigrator("../database.yml", DB)
+	if err != nil {
+		log.Fatal("couldn't create migrator:", err)
+	}
+	if err := migrator.Up(); err != nil {
+		log.Fatal("couldn't migrate up:", err)
+	}
 }
