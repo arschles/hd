@@ -22,7 +22,10 @@ func init() {
 	pop.Debug = env == "development"
 
 	log.Println("creating DB")
-	pop.CreateDB(DB)
+	if err := pop.CreateDB(DB); err != nil {
+		log.Println("recovering from DB create error:", err)
+	}
+
 	migrator, err := pop.NewFileMigrator("./migrations", DB)
 	if err != nil {
 		log.Fatal("couldn't create migrator:", err)
@@ -31,4 +34,5 @@ func init() {
 	if err := migrator.Up(); err != nil {
 		log.Fatal("couldn't migrate up:", err)
 	}
+	log.Println("migrations done")
 }
