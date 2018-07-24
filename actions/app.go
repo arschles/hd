@@ -29,10 +29,10 @@ func App() *buffalo.App {
 			SessionName: "_hd_session",
 		})
 		// Automatically redirect to SSL
-		app.Use(ssl.ForceSSL(secure.Options{
-			SSLRedirect:     ENV == "production",
-			SSLProxyHeaders: map[string]string{"X-Forwarded-Proto": "https"},
-		}))
+		// app.Use(ssl.ForceSSL(secure.Options{
+		// 	SSLRedirect:     ENV == "production",
+		// 	SSLProxyHeaders: map[string]string{"X-Forwarded-Proto": "https"},
+		// }))
 
 		if ENV == "development" {
 			app.Use(middleware.ParameterLogger)
