@@ -14,6 +14,7 @@ var DB *pop.Connection
 func init() {
 	var err error
 	env := envy.Get("GO_ENV", "development")
+	log.Println("connecting to DB environment", env)
 	DB, err = pop.Connect(env)
 	if err != nil {
 		log.Fatal(err)
