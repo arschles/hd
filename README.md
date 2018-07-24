@@ -30,7 +30,10 @@ az container create \
 	-e "GO_ENV=production" "DATABASE_URL=${DATABASE_URL}"
 ```
 
-Note: you can substitute `arschles/hd` with your own image name.
+Notes:
+
+- you can substitute `arschles/hd` with your own image name.
+- `DATABASE_URL` should be something like this: `postgres://${DB_USERNAME}:${DATABASE_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}?sslmode=require` (`DB_PORT` is usually 5432)
 
 The stuff below is Buffalo's boilerplate readme.
 
