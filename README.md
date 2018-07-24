@@ -1,6 +1,16 @@
-# Welcome to Buffalo!
+# Welcome Gophers!
 
-Thank you for choosing Buffalo for your web development needs.
+This repo has a pretty simple Buffalo app that shows off some things:
+
+- Testing an app
+- Buffalo resources
+- Running DBs locally in Docker
+- Doing stuff with the Database
+- Deploying a Docker image
+
+![azure gophers](./img/azure_gophers.png)
+
+# Getting Started & Developing Locally
 
 You'll need Docker, Docker Compose and [Buffalo](https://gobuffalo.io) installed.
 After you have that, getting started is pretty quick.
@@ -18,7 +28,7 @@ make dev
 buffalo dev
 ```
 
-## Deploying to the Interwebs
+# Deploying to the Interwebs
 
 To deploy to [ACI](https://azure.microsoft.com/en-us/services/container-instances/):
 
