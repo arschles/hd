@@ -51,7 +51,8 @@ ALTER TABLE public.schema_migration OWNER TO postgres;
 CREATE TABLE public.todos (
     id uuid NOT NULL,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    name text NOT NULL
 );
 
 

@@ -13,6 +13,7 @@
     <%= for (todo) in todos { %>
       <tr>
       <td>
+          <%= todo.Name %> (<code><%= todo.ID %></code>)
           <div class="pull-right">
             <a href="<%= todoPath({ todo_id: todo.ID }) %>" class="btn btn-info">View</a>
             <a href="<%= editTodoPath({ todo_id: todo.ID }) %>" class="btn btn-warning">Edit</a>
