@@ -2,10 +2,10 @@
 
 Thank you for choosing Buffalo for your web development needs.
 
-You'll need Docker and Docker Compose installed. After you have that, getting started
-is pretty quick.
+You'll need Docker, Docker Compose and [Buffalo](https://gobuffalo.io) installed.
+After you have that, getting started is pretty quick.
 
-First, you'll need to install Go dependencies with [dep](https://github.com/golang/dep):
+First, install Go dependencies with [dep](https://github.com/golang/dep):
 
 ```console
 dep ensure
