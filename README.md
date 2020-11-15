@@ -30,7 +30,7 @@ buffalo dev
 
 # Deploying to the Interwebs
 
-To deploy to [ACI](https://azure.microsoft.com/en-us/services/container-instances/):
+To deploy to [ACI](https://azure.microsoft.com/services/container-instances/?WT.mc_id=opensource-0000-aaschles):
 
 ```console
 az container create \
